@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "framework": "streamlit",
+  "framework": "python",
   "builds": [
     {
-      "src": "DeployModel.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "DeployModel.py"
+      "dest": "api/index.py"
     }
   ]
 }
