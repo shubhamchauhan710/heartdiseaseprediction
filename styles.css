@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Result Box */
+.result-box {
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #c92121, #8a0000);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-box.no-disease {
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Report View Container */
+.reportview-container {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Content */
+.sidebar .sidebar-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Title Style */
+h1 {
+    color: #4a90e2;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Style */
+.stButton > button {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.stButton > button:hover {
+    background-color: #357ABD;
+}
+
+/* Title Container */
+.title-container {
+    position: relative;
+    text-align: center;
+    color: white; /* Adjust text color for readability */
+    height: 40vh;
+    background: url('https://img.freepik.com/premium-photo/heart-wave-technology-background-shows-rhythm-heart-that-is-pumping-dark-blue-background-with-grid_968529-15985.jpg') no-repeat center center/cover;
+    background-size: cover; /* Ensures the image covers the full container */
+    background-position: center;
+}
+
+/* Title Heading */
+.title-container h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem; /* Larger text for title */
+    font-weight: bold;
+    padding-top: 30vh;
+    color:azure; /* Adjust padding to vertically center title */
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust for mobile view */
+    .title-container {
+        background-position: top; /* Change image positioning for mobile */
+    }
+
+    .title-container h1 {
+        font-size: 2rem; /* Smaller text for mobile */
+        padding-top: 20vh;
+    }
+}
