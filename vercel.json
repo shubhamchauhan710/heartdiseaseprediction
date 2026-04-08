@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "framework": "streamlit",
+  "builds": [
+    {
+      "src": "DeployModel.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "env": {
+    "PYTHONUNBUFFERED": "1"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "DeployModel.py"
+    }
+  ]
+}
